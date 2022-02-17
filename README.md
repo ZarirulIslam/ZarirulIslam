@@ -2,9 +2,9 @@
 #### Full Stack Web Developer
 I am an undergraduate student of the Department of Computer Science and Engineering at Daffodil International University. I like to do programming. I want to be a Full Stack Web developer. That’s why I try to practice it regularly.
 
-Skills: 
-✔ HTML / CSS /Bootstrap
-✔ Clickfunnel
+Skills: <br>
+✔ HTML / CSS /Bootstrap <br>
+✔ Clickfunnel <br>
 ✔ Photoshop / Illustrator
 
 - 🌱 I’m currently learning Bootstrap 
