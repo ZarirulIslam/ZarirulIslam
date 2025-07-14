@@ -1,13 +1,23 @@
 ### Hi there 👋, I am Muhammad Zarirul Islam
-#### Full Stack Web Developer
-I am an undergraduate student of the Department of Computer Science and Engineering at Daffodil International University. I like to do programming. I want to be a Full Stack Web developer. That’s why I try to practice it regularly.
+#### Data Scientist | Ex-Data Annotator | Clickfunnels Expert | Full Stack Web Developer
+I am Muhammad Jarirul Islam, a passionate and goal-oriented Computer Science graduate with a strong focus on Data Science and Machine Learning. I have completed my B.Sc. from Daffodil International University with a CGPA of 3.80, and I am currently pursuing my Master’s in Computer Science, majoring in Data Science.
+
+I have practical experience in data annotation, web development, and academic research. I completed my thesis on “Machine Learning Methods for Predicting Chronic Kidney Disease”, where I explored real-world healthcare data to predict disease progression using ML models.
+
+I’ve also worked with Quantigo AI as a contractual Data Annotator and actively participated in various academic projects including a Bus Ticket Management System using C and Python.
+
+Apart from academics, I was actively involved with Daffodil Computer and Programming Club, where I worked as an Associate and Executive member, managing outreach through social media.
+
+Currently, I am focusing on enhancing my skills in Data Science, Python Programming, Machine Learning, and Web Technologies, aiming to build a career as a Data Scientist or ML Engineer.
 
 Skills: <br>
+✔ Python <br>
+✔ Numpy | Pandas | Matplotlib <br>
 ✔ HTML / CSS /Bootstrap <br>
 ✔ Clickfunnel <br>
 ✔ Photoshop / Illustrator
 
-- 🌱 I’m currently learning Bootstrap 
+- 🌱 I’m currently learning Data Science
 - 👯 I’m looking to collaborate on Github 
 - 📫 How to reach me: zarir7116@gmail.com 
 
