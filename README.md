@@ -25,7 +25,7 @@
 
 ### About me
 
-I am a goal-oriented Computer Science graduate focused on Data Science and Machine Learning. I completed my B.Sc. at Daffodil International University with a CGPA of 3.80, and I am now pursuing a Master's in Computer Science, majoring in Data Science.
+I am a goal-oriented Computer Science graduate focused on Data Science and Machine Learning. I completed both my B.Sc. (CGPA 3.80) and my M.Sc. in Computer Science, majoring in Data Science (CGPA 3.70), at Daffodil International University.
 
 - 🌱 Currently learning: Data Science, Python, Machine Learning and Web Technologies
 - 🎯 Goal: a career as a Data Scientist or ML Engineer
