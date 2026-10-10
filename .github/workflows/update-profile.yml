@@ -1,0 +1,71 @@
+name: Update profile cards
+
+on:
+  schedule:
+    - cron: "23 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      CARD_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Stats card (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=true&theme=default
+          path: profile/stats-light.svg
+          token: ${{ env.CARD_TOKEN }}
+          fail_on_error: true
+
+      - name: Stats card (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=true&theme=github_dark
+          path: profile/stats-dark.svg
+          token: ${{ env.CARD_TOKEN }}
+          fail_on_error: true
+
+      - name: Top languages (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&theme=default
+          path: profile/top-langs-light.svg
+          token: ${{ env.CARD_TOKEN }}
+          fail_on_error: true
+
+      - name: Top languages (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&theme=github_dark
+          path: profile/top-langs-dark.svg
+          token: ${{ env.CARD_TOKEN }}
+          fail_on_error: true
+
+      - name: Contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile/snake-light.svg
+            profile/snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update profile cards" || exit 0
+          git push
